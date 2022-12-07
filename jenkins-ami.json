@@ -9,8 +9,7 @@
   "builders" : [
     "ssh_username" : "ec2-user",
     "ssh_keypair_name" : "packer",
-    "ssh_private_key_file" : "{{ user `ssh_private_key` }}",
-    ...
+    "ssh_private_key_file" : "{{ user `ssh_private_key` }}"
   ],
   "provisioners": []
 }
