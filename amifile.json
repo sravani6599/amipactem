@@ -1,0 +1,17 @@
+{
+  "_comment" : "Simple Packer Template using Amazon Linux 2017.03",
+  "variables": {
+    "aws_access_key": "AKIA2NO7AW73J6XOMHN4",
+    "aws_secret_key": "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"
+  },
+  "builders": [{
+    "type": "amazon-ebs",
+    "access_key": "{{user `aws_access_key`}}",
+    "secret_key": "{{user `aws_secret_key`}}",
+    "region": "us-west-2",
+    "source_ami": "ami-094125af156557ca2",
+    "instance_type": "t2.micro",
+    "ssh_username": "ec2-user",
+    "ami_name": "HelloWorld Build-{{user `Build`}}"
+  }]
+}
