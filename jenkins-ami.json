@@ -3,7 +3,7 @@
     "aws_access_key" : "{{ env `AWS_ACCESS_KEY` }}",
     "aws_secret_key" : "{{ env `AWS_SECRET_KEY` }}",
     "ssh_private_key" : "{{ env `SSH_PRIVATE_KEY` }}",
-    "aws_ami_us_east_1" : "{{ env `AWS_BASE_AMI` }}",
+    "aws_ami_us_west_2" : "{{ env `AWS_BASE_AMI` }}",
     "jenkins_master_image_version" : "{{ env `JENKINS_MASTER_IMAGE_VERSION` }}"
   },
   "builders" : [
